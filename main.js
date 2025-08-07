@@ -1,4 +1,4 @@
-const {Client, Events, GatewayIntentBits, Collection, MessageFlags, WorkerShardingStrategy} = require('discord.js');
+const {Client, GatewayIntentBits, Collection, ActivityType, PresenceUpdateStatus} = require('discord.js');
 const winston = require('winston');
 const dotenv = require('dotenv');
 const {get:_commands} = require('./utils.js')
@@ -41,3 +41,5 @@ for (const file of event_files) {
 }
 
 client.login(process.env.DISCORD_BOT_TOKEN)
+client.user.setActivity('in on Everyone', {type: ActivityType.Listening});
+client.user.setStatus(PresenceUpdateStatus.Online);

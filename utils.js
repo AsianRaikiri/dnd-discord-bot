@@ -2,7 +2,6 @@ const fs = require('node:fs')
 const path = require('node:path')
 
 export function get_commands() {
-    "This is some kind of docstring"
     const folder_path = path.join(__dirname, 'commands');
     const commands_folder = fs.readdirSync(folder_path);
     commands = []
