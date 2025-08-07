@@ -1,0 +1,34 @@
+{
+  "name": "dnd-discord-bot",
+  "version": "1.0.0",
+  "description": "A little discord bot for dnd sheduling",
+  "keywords": [
+    "discord-bot"
+  ],
+  "homepage": "https://github.com/AsianRaikiri/dnd-discord-bot#readme",
+  "bugs": {
+    "url": "https://github.com/AsianRaikiri/dnd-discord-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AsianRaikiri/dnd-discord-bot.git"
+  },
+  "license": "ISC",
+  "author": "Maik Grunicke",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "register": "node deploy_commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.21.0",
+    "dotenv": "^17.2.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "eslint": "^9.32.0"
+  }
+}
