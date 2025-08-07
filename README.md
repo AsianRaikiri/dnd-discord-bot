@@ -12,6 +12,11 @@ npm install
 To install all the neccessary node packages.
 
 ```
-node . 
+npm run deploy
+```
+To update the commands available to the bot
+```
+npm run start
 ```
 To start the application
+
